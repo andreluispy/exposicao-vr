@@ -10,8 +10,10 @@
     <a-scene>
       <a-sky color="#6EBAA7"></a-sky>
       <!-- Iluminação -->
-      <a-light type="spot" color="#fff" intensity="3" position="0 4 8" target="#quadros"></a-light>
+      <a-light type="spot" color="#fff" intensity="3" position="0 4 -15" target="#quadros"></a-light>
       <a-light type="spot" color="#fff" intensity="3" position="0 4 2.9" target="#quadros"></a-light>
+      <a-light type="spot" color="#fff" intensity="1" position="0 4 0" target="#back"></a-light>
+      <a-light type="spot" color="#fff" intensity="1" position="0 4 -2.9" target="#frente"></a-light>
       <a-light type="ambient" color="#888"></a-light>      
 
       <!-- Quadro -->
@@ -50,6 +52,25 @@
         position="2 1 -1"
         rotation="0 -90 0"
       ></a-plane>
+
+
+      <a-plane
+        id="frente"
+        src="https://uploads5.wikiart.org/images/anita-malfatti/a-boba-1916.jpg"
+        height="2"
+        width="2"
+        position="0 1 -3"
+        rotation="0 0 0"
+      ></a-plane>
+      <a-plane
+        id="back"
+        src="https://th.bing.com/th/id/OIP.En7PvCeG0dkSr1gCxFetkwHaGN?w=512&h=429&rs=1&pid=ImgDetMain"
+        height="2"
+        width="2.5"
+        position="0 1 5"
+        rotation="0 180 0"
+      ></a-plane>
+
 
       <!-- Câmera com controles para dispositivos móveis -->
       <a-entity 
